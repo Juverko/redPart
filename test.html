@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <form action="http://localhost:5000/api/file" enctype="multipart/form-data" method="post">
+    <input type="file" id="file" name="image">
+    <input type="submit" id="done" value="done">
+  </form>
+  
+</body>
+
+<script>
+  document.querySelector("#done").addEventListener("click",async(e)=>{
+    // e.preventDefault(); 
+    // console.log(document.querySelector('#file').files[0]);
+    // let res = await fetch('http://localhost:5000/api/file',{  
+    //   headers: {
+    //     'Content-Type': 'multipart/form-data'
+    //   },
+    //   method: "POST",
+    //   body:JSON.stringify(document.querySelector('#file').files[0])
+    // })
+  })
+</script>
+</html>
