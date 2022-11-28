@@ -30,7 +30,7 @@ function createBlock(data){
           <div class="product-card__image">
               <div class="image image--type--product">
                   <a href="product-full.html" class="image__body">
-                      <img class="image__tag" src="images/products/product-1-245x245.jpg" alt="">
+                      <img class="image__tag" src="${el.image1}" alt="">
                   </a>
               </div>
               <div class="status-badge status-badge--style--success product-card__fit status-badge--has-icon status-badge--has-text">
