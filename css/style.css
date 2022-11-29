@@ -21050,7 +21050,13 @@ select.form-control::-ms-expand {
   margin-bottom: 24px;
 }
 
-
+.pSystem,
+  .pElement,
+  .pMarkaModel,
+  .pMarkaYear{
+    background:rgba(229,229,229,.8);
+    display: inline;
+  }
 
 @media (max-width: 500px) {
   .blocks{
@@ -21182,16 +21188,23 @@ select.form-control::-ms-expand {
     text-align:center;
     margin:10px auto;
   }
-  .prodImInfo>div:not(.pName,.pCoast){
-    background:rgba(229,229,229,.8);
+  .prodImInfo>div:not(.pName,.pCoast,.moreInfo,.pSystem,.pElement,.pMarkaModel,.pMarkaYear){
+    /* background:rgba(229,229,229,.8); */
     width:80%;
-    padding:10px;
+    /* padding:10px; */
     margin:5px auto;
   }
   .moreInfo{
     width:100%;
     text-align: justify;
   }
+  .pQuantity{
+    display: none;
+  }
+  
+  
+
+
   .all_info_product .block-finder__form-control,
    .all_info_product .block-finder__form-control--button{
     display: inline-block;

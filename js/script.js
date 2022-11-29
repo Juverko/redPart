@@ -93,18 +93,19 @@ function createBlock(data){
               document.querySelector('#img2').src = el.image3;
               document.querySelector('#img3').src = el.image4;
               document.querySelector('.all_info_product_block .pName').innerHTML = `${el.prod}`;
-              document.querySelector('.all_info_product_block .pNameCode').innerHTML = `название: ${el.pName}`;
+              document.querySelector('.all_info_product_block .pNameCode').innerHTML = `<b>название:</b> ${el.pName}`;
               document.querySelector('.all_info_product_block .pCoast').innerHTML = `${el.pCoast} сомони`;
-              document.querySelector('.all_info_product_block .pQuantity').innerHTML = `в наличии есть ${el.pQuantity} штуки(а)`;
+              document.querySelector('.moreInfo>p').innerHTML = `<b>описание:</b> ${el.pComment}`;
+              // document.querySelector('.all_info_product_block .pQuantity').innerHTML = `в наличии есть ${el.pQuantity} штуки(а)`;
               document.querySelector('.all_info_product_block .pSystem').innerHTML = `${el.pSystem}`;
               document.querySelector('.all_info_product_block .pElement').innerHTML = `${el.pElement}`;
-              document.querySelector('.all_info_product_block .pBrand').innerHTML = `Производитель: ${el.pBrand}`;
-              document.querySelector('.all_info_product_block .pCountry').innerHTML = `страна роизводитель: ${el.pCountry}`;
+              document.querySelector('.all_info_product_block .pBrand').innerHTML = `<b>Производитель:</b> ${el.pBrand}`;
+              document.querySelector('.all_info_product_block .pCountry').innerHTML = `<b>страна:</b> ${el.pCountry}`;
               document.querySelector('.all_info_product_block .pMarkaModel').innerHTML = `для ${el.pMarkaModel} ${el.pModel} ${el.pGeneration} ${el.pGenerationCode}`;
               document.querySelector('.all_info_product_block .pMarkaYear').innerHTML = `Год выпуска машины: ${el.pMarkaYear}`;
-              document.querySelector('.all_info_product_block .pMarket').innerHTML = `магазин: ${el.pMarket}`;
-              document.querySelector('.all_info_product_block .pAddres').innerHTML = `алрес: ${el.pAddres}`;
-              document.querySelector('.moreInfo>p').innerHTML = `${el.pComment}`;
+              document.querySelector('.all_info_product_block .pMarket').innerHTML = `<b>магазин:</b> ${el.pMarket}`;
+              document.querySelector('.all_info_product_block .pAddres').innerHTML = `<b>адрес:</b> ${el.pAddres}`;
+              
             // console.log(el);
             document.querySelectorAll(".all_info_product .images>img").forEach(img=>{
               img.addEventListener('click',function(){
